@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="de">
-<head>
-<meta charset="UTF-8">
+<!-- saved from url=(0067)file:///C:/Users/robie/Downloads/Tennis%20Doppel%20Planer%20v9.html -->
+<html lang="de"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Tennis Planer">
 <meta name="theme-color" content="#0a0f0a">
 <title>Tennis Doppel Planer</title>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="./index_files/css2" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
 
@@ -384,16 +384,120 @@ input[type=number]{width:90px;}
     Safari → Teilen → <strong>„Zum Home-Bildschirm"</strong>
   </div>
   <div class="card">
-    <div class="card-label">Spielerliste <span class="count-badge" id="player-count">0</span></div>
+    <div class="card-label">Spielerliste <span class="count-badge" id="player-count">18</span></div>
     <div class="add-row">
-      <input type="text" id="new-player-input" placeholder="Name eingeben …"
-        autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false"
-        onkeydown="if(event.key==='Enter'){event.preventDefault();addPlayer();}">
+      <input type="text" id="new-player-input" placeholder="Name eingeben …" autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false" onkeydown="if(event.key===&#39;Enter&#39;){event.preventDefault();addPlayer();}">
       <button class="add-btn" onclick="addPlayer()" aria-label="Hinzufügen">+</button>
     </div>
     <div class="player-list" id="player-list">
-      <div class="empty-hint">Noch keine Spieler erfasst</div>
+    <div class="player-item" id="pitem-0">
+      <div class="player-avatar" id="pavatar-0">A</div>
+      <span class="player-name" id="pname-0">a</span>
+      <button class="edit-btn" onclick="startEdit(0)" aria-label="Bearbeiten">✏️</button>
+      <button class="del-btn" onclick="removePlayer(0)" aria-label="Entfernen">✕</button>
     </div>
+    <div class="player-item" id="pitem-1">
+      <div class="player-avatar" id="pavatar-1">B</div>
+      <span class="player-name" id="pname-1">b</span>
+      <button class="edit-btn" onclick="startEdit(1)" aria-label="Bearbeiten">✏️</button>
+      <button class="del-btn" onclick="removePlayer(1)" aria-label="Entfernen">✕</button>
+    </div>
+    <div class="player-item" id="pitem-2">
+      <div class="player-avatar" id="pavatar-2">C</div>
+      <span class="player-name" id="pname-2">c</span>
+      <button class="edit-btn" onclick="startEdit(2)" aria-label="Bearbeiten">✏️</button>
+      <button class="del-btn" onclick="removePlayer(2)" aria-label="Entfernen">✕</button>
+    </div>
+    <div class="player-item" id="pitem-3">
+      <div class="player-avatar" id="pavatar-3">D</div>
+      <span class="player-name" id="pname-3">d</span>
+      <button class="edit-btn" onclick="startEdit(3)" aria-label="Bearbeiten">✏️</button>
+      <button class="del-btn" onclick="removePlayer(3)" aria-label="Entfernen">✕</button>
+    </div>
+    <div class="player-item" id="pitem-4">
+      <div class="player-avatar" id="pavatar-4">E</div>
+      <span class="player-name" id="pname-4">e</span>
+      <button class="edit-btn" onclick="startEdit(4)" aria-label="Bearbeiten">✏️</button>
+      <button class="del-btn" onclick="removePlayer(4)" aria-label="Entfernen">✕</button>
+    </div>
+    <div class="player-item" id="pitem-5">
+      <div class="player-avatar" id="pavatar-5">F</div>
+      <span class="player-name" id="pname-5">f</span>
+      <button class="edit-btn" onclick="startEdit(5)" aria-label="Bearbeiten">✏️</button>
+      <button class="del-btn" onclick="removePlayer(5)" aria-label="Entfernen">✕</button>
+    </div>
+    <div class="player-item" id="pitem-6">
+      <div class="player-avatar" id="pavatar-6">G</div>
+      <span class="player-name" id="pname-6">g</span>
+      <button class="edit-btn" onclick="startEdit(6)" aria-label="Bearbeiten">✏️</button>
+      <button class="del-btn" onclick="removePlayer(6)" aria-label="Entfernen">✕</button>
+    </div>
+    <div class="player-item" id="pitem-7">
+      <div class="player-avatar" id="pavatar-7">H</div>
+      <span class="player-name" id="pname-7">h</span>
+      <button class="edit-btn" onclick="startEdit(7)" aria-label="Bearbeiten">✏️</button>
+      <button class="del-btn" onclick="removePlayer(7)" aria-label="Entfernen">✕</button>
+    </div>
+    <div class="player-item" id="pitem-8">
+      <div class="player-avatar" id="pavatar-8">J</div>
+      <span class="player-name" id="pname-8">j</span>
+      <button class="edit-btn" onclick="startEdit(8)" aria-label="Bearbeiten">✏️</button>
+      <button class="del-btn" onclick="removePlayer(8)" aria-label="Entfernen">✕</button>
+    </div>
+    <div class="player-item" id="pitem-9">
+      <div class="player-avatar" id="pavatar-9">K</div>
+      <span class="player-name" id="pname-9">k</span>
+      <button class="edit-btn" onclick="startEdit(9)" aria-label="Bearbeiten">✏️</button>
+      <button class="del-btn" onclick="removePlayer(9)" aria-label="Entfernen">✕</button>
+    </div>
+    <div class="player-item" id="pitem-10">
+      <div class="player-avatar" id="pavatar-10">L</div>
+      <span class="player-name" id="pname-10">l</span>
+      <button class="edit-btn" onclick="startEdit(10)" aria-label="Bearbeiten">✏️</button>
+      <button class="del-btn" onclick="removePlayer(10)" aria-label="Entfernen">✕</button>
+    </div>
+    <div class="player-item" id="pitem-11">
+      <div class="player-avatar" id="pavatar-11">M</div>
+      <span class="player-name" id="pname-11">m</span>
+      <button class="edit-btn" onclick="startEdit(11)" aria-label="Bearbeiten">✏️</button>
+      <button class="del-btn" onclick="removePlayer(11)" aria-label="Entfernen">✕</button>
+    </div>
+    <div class="player-item" id="pitem-12">
+      <div class="player-avatar" id="pavatar-12">N</div>
+      <span class="player-name" id="pname-12">n</span>
+      <button class="edit-btn" onclick="startEdit(12)" aria-label="Bearbeiten">✏️</button>
+      <button class="del-btn" onclick="removePlayer(12)" aria-label="Entfernen">✕</button>
+    </div>
+    <div class="player-item" id="pitem-13">
+      <div class="player-avatar" id="pavatar-13">O</div>
+      <span class="player-name" id="pname-13">o</span>
+      <button class="edit-btn" onclick="startEdit(13)" aria-label="Bearbeiten">✏️</button>
+      <button class="del-btn" onclick="removePlayer(13)" aria-label="Entfernen">✕</button>
+    </div>
+    <div class="player-item" id="pitem-14">
+      <div class="player-avatar" id="pavatar-14">P</div>
+      <span class="player-name" id="pname-14">p</span>
+      <button class="edit-btn" onclick="startEdit(14)" aria-label="Bearbeiten">✏️</button>
+      <button class="del-btn" onclick="removePlayer(14)" aria-label="Entfernen">✕</button>
+    </div>
+    <div class="player-item" id="pitem-15">
+      <div class="player-avatar" id="pavatar-15">Q</div>
+      <span class="player-name" id="pname-15">q</span>
+      <button class="edit-btn" onclick="startEdit(15)" aria-label="Bearbeiten">✏️</button>
+      <button class="del-btn" onclick="removePlayer(15)" aria-label="Entfernen">✕</button>
+    </div>
+    <div class="player-item" id="pitem-16">
+      <div class="player-avatar" id="pavatar-16">R</div>
+      <span class="player-name" id="pname-16">r</span>
+      <button class="edit-btn" onclick="startEdit(16)" aria-label="Bearbeiten">✏️</button>
+      <button class="del-btn" onclick="removePlayer(16)" aria-label="Entfernen">✕</button>
+    </div>
+    <div class="player-item" id="pitem-17">
+      <div class="player-avatar" id="pavatar-17">ZZ</div>
+      <span class="player-name" id="pname-17">zz</span>
+      <button class="edit-btn" onclick="startEdit(17)" aria-label="Bearbeiten">✏️</button>
+      <button class="del-btn" onclick="removePlayer(17)" aria-label="Entfernen">✕</button>
+    </div></div>
   </div>
   <div style="display:flex;gap:8px;margin-bottom:4px;">
     <button class="btn-ghost" style="margin-top:0;flex:1;font-size:.82rem;padding:10px 8px;" onclick="importPlayers()">📂 Importieren</button>
@@ -428,7 +532,7 @@ input[type=number]{width:90px;}
     <div id="players-summary" style="margin-top:2px"></div>
   </div>
   <button class="btn-primary" onclick="goSchedule()">Spielplan erstellen →</button>
-  <button class="btn-ghost" onclick="goPage('page-players',1)">← Spieler bearbeiten</button>
+  <button class="btn-ghost" onclick="goPage(&#39;page-players&#39;,1)">← Spieler bearbeiten</button>
 </div>
 
 <!-- PAGE 3: SPIELPLAN + RESULTATE -->
@@ -436,21 +540,21 @@ input[type=number]{width:90px;}
   <div class="warn-box" id="gpp-info" style="display:none;margin-bottom:10px;"></div>
   <div id="schedule-output"></div>
   <button class="btn-primary" id="btn-rangliste" onclick="goRangliste()" style="display:none">🏆 Rangliste anzeigen</button>
-  <button class="btn-ghost" onclick="goPage('page-rounds',2)">🔄 Neu planen (gleiche Spieler)</button>
-  <button class="btn-ghost" onclick="goPage('page-players',1)">👥 Spieler bearbeiten / wechseln</button>
+  <button class="btn-ghost" onclick="goPage(&#39;page-rounds&#39;,2)">🔄 Neu planen (gleiche Spieler)</button>
+  <button class="btn-ghost" onclick="goPage(&#39;page-players&#39;,1)">👥 Spieler bearbeiten / wechseln</button>
   <button class="btn-ghost" onclick="exportExcel()">📥 Als Excel herunterladen</button>
 </div>
 
 <!-- PAGE 4: RANGLISTE -->
 <div class="page" id="page-rangliste">
   <div class="card" style="text-align:center;padding:20px 16px 14px;">
-    <div style="font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:3px;color:var(--muted);">Endresultat</div>
-    <div style="font-family:'Bebas Neue',sans-serif;font-size:2.2rem;letter-spacing:2px;color:var(--accent);line-height:1.1;">Rangliste</div>
+    <div style="font-family:&#39;Bebas Neue&#39;,sans-serif;font-size:1rem;letter-spacing:3px;color:var(--muted);">Endresultat</div>
+    <div style="font-family:&#39;Bebas Neue&#39;,sans-serif;font-size:2.2rem;letter-spacing:2px;color:var(--accent);line-height:1.1;">Rangliste</div>
   </div>
   <div id="rangliste-output"></div>
-  <button class="btn-ghost" onclick="goPage('page-schedule',3)">← Zurück zum Spielplan</button>
-  <button class="btn-ghost" onclick="goPage('page-rounds',2)">🔄 Neu planen (gleiche Spieler)</button>
-  <button class="btn-ghost" onclick="goPage('page-players',1)">👥 Neues Turnier / Spieler wechseln</button>
+  <button class="btn-ghost" onclick="goPage(&#39;page-schedule&#39;,3)">← Zurück zum Spielplan</button>
+  <button class="btn-ghost" onclick="goPage(&#39;page-rounds&#39;,2)">🔄 Neu planen (gleiche Spieler)</button>
+  <button class="btn-ghost" onclick="goPage(&#39;page-players&#39;,1)">👥 Neues Turnier / Spieler wechseln</button>
 </div>
 
 <!-- PAGE 5: STATISTIK -->
@@ -478,18 +582,18 @@ input[type=number]{width:90px;}
 
 <!-- BOTTOM NAV -->
 <div class="bottom-nav">
-  <button class="nav-item active" id="nav-planer" onclick="switchTab('planer')">
+  <button class="nav-item active" id="nav-planer" onclick="switchTab(&#39;planer&#39;)">
     <span class="nav-icon">🎾</span>Planer
   </button>
-  <button class="nav-item" id="nav-overview" onclick="switchTab('overview')">
+  <button class="nav-item" id="nav-overview" onclick="switchTab(&#39;overview&#39;)">
     <span class="nav-icon">📋</span>Übersicht
   </button>
-  <button class="nav-item" id="nav-stats" onclick="switchTab('stats')">
+  <button class="nav-item" id="nav-stats" onclick="switchTab(&#39;stats&#39;)">
     <span class="nav-icon">📊</span>Statistik
   </button>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<script src="./index_files/xlsx.full.min.js.Herunterladen"></script>
 <script>
 let players = [];
 let currentPlanerPage = 'page-players';
@@ -1191,5 +1295,6 @@ if(isIOS&&!window.navigator.standalone){
 players=loadPlayers();
 renderPlayers();
 </script>
-</body>
-</html>
+
+
+</body></html>
